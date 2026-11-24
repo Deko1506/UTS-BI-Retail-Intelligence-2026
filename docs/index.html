@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retail Intelligence · Business Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.468.0/lucide.min.css">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body class="cover-body">
+<main class="cover-shell">
+  <header class="cover-topbar">
+    <div class="cover-brand"><span class="brand-mark"><i data-lucide="chart-no-axes-combined"></i></span><span class="brand-copy"><b>RETAIL</b><small>INTELLIGENCE</small></span></div>
+    <span class="cover-tag"><span class="pulse"></span> Ujian Tengah Semester</span>
+  </header>
+  <section class="cover-hero">
+    <div class="cover-hero-copy">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> UJIAN TENGAH SEMESTER</div>
+      <h1>Retail Intelligence,<br><span>grounded in data.</span></h1>
+      <p class="cover-tagline">Integrasi Data Mining &amp; Business Intelligence — menemukan pola kombinasi produk, memsegmentasi pelanggan, dan menyusun rekomendasi bisnis berbasis bukti.</p>
+      <div class="cover-chips">
+        <span class="cover-chip">Mata Kuliah: Business Intelligence</span>
+        <span class="cover-chip">Semester 7</span>
+        <span class="cover-chip">Tugas UTS</span>
+      </div>
+    </div>
+    <aside class="cover-dev-card">
+      <img class="cover-dev-photo" src="assets/deko.jpg" alt="Foto Bernard M. Deny Akoit">
+      <div class="cover-dev-info"><small>Pengembang</small><b>Bernard M. Deny Akoit</b><span>NPM 51230129</span><span>Program Studi Teknologi Informasi</span></div>
+    </aside>
+  </section>
+  <section class="cover-section">
+    <h2>Tujuan Sistem</h2>
+    <div class="cover-goals">
+      <article><span class="goal-icon"><i data-lucide="search"></i></span><div><b>Pemahaman data</b><p>Memahami struktur, distribusi, dan kualitas data transaksi.</p></div></article>
+      <article><span class="goal-icon"><i data-lucide="sparkles"></i></span><div><b>Data siap analisis</b><p>Membersihkan data secara konservatif dengan jejak audit.</p></div></article>
+      <article><span class="goal-icon"><i data-lucide="network"></i></span><div><b>Pola pembelian</b><p>Menemukan produk yang sering dibeli bersama melalui Apriori.</p></div></article>
+      <article><span class="goal-icon"><i data-lucide="chart-scatter"></i></span><div><b>Segmentasi pelanggan</b><p>Mengelompokkan pelanggan dengan RFM dan K-Means.</p></div></article>
+      <article><span class="goal-icon"><i data-lucide="lightbulb"></i></span><div><b>Keputusan berbasis bukti</b><p>Menerjemahkan hasil analisis menjadi rekomendasi dan KPI.</p></div></article>
+    </div>
+  </section>
+  <section class="cover-section">
+    <h2>Alur Pengerjaan</h2>
+    <div class="cover-flow">
+      <div class="flow-step"><span>01</span><b>Upload &amp; EDA</b><small>Inspeksi struktur, profil, dan distribusi</small></div>
+      <div class="flow-step"><span>02</span><b>Preprocessing</b><small>Bersihkan data dan catat aturan</small></div>
+      <div class="flow-step"><span>03</span><b>Validasi &amp; Audit</b><small>Periksa aturan bisnis</small></div>
+      <div class="flow-step"><span>04</span><b>Apriori</b><small>Temukan pola basket</small></div>
+      <div class="flow-step"><span>05</span><b>K-Means</b><small>Segmentasi pelanggan</small></div>
+      <div class="flow-step"><span>06</span><b>Rekomendasi</b><small>Insight, KPI, dan laporan</small></div>
+    </div>
+  </section>
+  <section class="cover-kpis">
+    <article class="kpi-card"><div class="kpi-top"><span>Modul analisis</span></div><div class="kpi-value">6</div><div class="kpi-foot">Tahap terintegrasi</div></article>
+    <article class="kpi-card"><div class="kpi-top"><span>Algoritma data mining</span></div><div class="kpi-value">2</div><div class="kpi-foot">Apriori &amp; K-Means</div></article>
+    <article class="kpi-card"><div class="kpi-top"><span>Dataset contoh</span></div><div class="kpi-value">18.513</div><div class="kpi-foot">Baris · 6.000 transaksi</div></article>
+    <article class="kpi-card"><div class="kpi-top"><span>Ekspor laporan</span></div><div class="kpi-value">2</div><div class="kpi-foot">Excel &amp; PDF</div></article>
+  </section>
+  <section class="cover-start">
+    <div class="cover-start-form">
+      <div class="cover-start-copy"><h2><i data-lucide="play-circle"></i> Mulai Sistem</h2><p>Halaman cover ini berjalan di GitHub Pages. Untuk upload dataset dan menjalankan analisis, hubungkan ke server Flask publik.</p></div>
+      <div class="cover-start-fields"><a class="button button-primary cover-start-button" id="launchSystem" href="#start">Buka sistem analisis <i data-lucide="arrow-right"></i></a></div>
+    </div>
+    <p class="cover-hint" id="hostingHint" role="status">Alamat aplikasi belum diatur. Isi RETAIL_APP_URL pada file config.js setelah server Flask dipublikasikan.</p>
+  </section>
+  <footer class="cover-footer"><span>RETAIL INTELLIGENCE</span><span>Bernard M. Deny Akoit · NPM 51230129 · Teknologi Informasi · Semester 7</span></footer>
+</main>
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="config.js"></script>
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  const appUrl = String(window.RETAIL_APP_URL || "").trim().replace(/\/+$/, "");
+  const launch = document.getElementById("launchSystem");
+  const hint = document.getElementById("hostingHint");
+  if (appUrl) {
+    launch.href = appUrl + "/";
+    hint.textContent = "Sistem analisis akan dibuka pada server publik yang telah dikonfigurasi.";
+  } else {
+    launch.addEventListener("click", event => {
+      event.preventDefault();
+      hint.textContent = "Server Flask belum terhubung. Publikasikan aplikasi, lalu isi RETAIL_APP_URL pada config.js.";
+    });
+  }
+</script>
+</body>
+</html>
